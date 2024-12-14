@@ -1,0 +1,16 @@
+<main>
+    <h1>Hola bienvenido {{ user.name }} - {{ user.last_name}}  a handlebars comisión 70440</h1>
+
+    {{#if hayProductos }}   
+        <h2>Hay productos</h2>
+        <ul>
+            {{#each products}}
+                <li>Nombre del producto: {{title}} - precio: {{price}}</li>
+            {{/each}}
+        </ul>
+    {{else}}
+        <h2>No Hay productos</h2>
+    {{/if }}   
+
+</main>
+<script src="/assets/js/index.js"></script>
